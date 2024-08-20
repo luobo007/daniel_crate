@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["zhuruo372101@gmail.com"]
 description = "A comprehensive template for lib crates!"
 readme = 'README.md'
-license = "Apache License 2.0"
+license = "Apache-2.0"
 homepage = "https://github.com/luobo007/daniel_crate"
 repository = "https://github.com/luobo007/daniel_crate.git"
 
