@@ -19,15 +19,22 @@ pub mod utils {
 mod tests {
     use crate::utils::add;
 
+    /// 测试正常的加法运算
+    ///
+    /// 此测试用例验证`add`函数在正常输入时是否返回正确的加法结果。
     #[test]
     fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+        let result = add(1, 1);
+        assert_eq!(result, 2); // 检查1 + 1的结果是否为2
     }
 
+    /// 测试当加法结果超过u8类型的最大值时的panic行为
+    ///
+    /// 由于u8的最大值为255，当输入参数之和超过255时，程序应触发panic。
     #[test]
     #[should_panic]
     fn it_should_panic() {
-        crate::utils::add(255, 1);
+        crate::utils::add(255, 1); // 由于结果超过255，预期会触发panic
     }
 }
+
